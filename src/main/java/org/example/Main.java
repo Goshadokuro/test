@@ -2,29 +2,26 @@ package org.example;
 
 public class Main {
    public static void main(String[] args) {
-      Integer res =Main.result(3,5);
-      Integer res2 =Main.result2(10,2);
-      Integer res3 =Main.result3(4,2);
-      Integer res4 =Main.result4(16,2);
-      System.out.println(res);
-      System.out.println(res2);
-      System.out.println(res3);
-      System.out.println(res4);
+      Integer addition =Main.addition(3,5);
+      Integer subtraction =Main.subtraction(10,2);
+      Integer multiply =Main.multiply(4,2);
+      Integer division =Main.division(16,2);
+      System.out.printf("Results: plus = %d, minus = %d, ymnojit = %d, razdelity = %d \n", addition,subtraction,multiply,division);
     }
 
-    private static Integer result(Integer a, Integer b) {
+    private static Integer addition(Integer a, Integer b) {
       return a+b;
     }
 
-    private static Integer result2(Integer a, Integer b) {
+    private static Integer subtraction(Integer a, Integer b) {
        return a-b;
     }
 
-    private static Integer result3(Integer a, Integer b){
+    private static Integer multiply(Integer a, Integer b){
        return a*b;
     }
 
-    private static Integer result4(Integer a, Integer b){
+    private static Integer division(Integer a, Integer b){
         return a/b;
     }
 }
