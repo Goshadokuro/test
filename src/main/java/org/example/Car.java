@@ -16,4 +16,6 @@ public class Car {
         System.out.printf("I am %s, my color is %s, my age is %d.", brand, color, age);
     }
 
+    String[] array = new String[4];
+
 }
